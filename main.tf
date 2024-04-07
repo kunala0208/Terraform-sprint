@@ -4,13 +4,13 @@ provider "azurerm" {
 
 # Create resource group
 resource "azurerm_resource_group" "main" {
-  name     = local.rg_name
+  name     = local.resource_group_name
   location = var.location
 }
 
 # Create storage account
-resource "azurerm_storage_account" "main" {
-  name                     = local.st_name
+resource "azurerm_storage_account23" "main" {
+  name                     = local.storage_account_name
   resource_group_name      = azurerm_resource_group.main.name
   location                 = var.location
   account_tier             = var.account_tier
