@@ -34,23 +34,3 @@ variable "account_tier" {
   description = "The tier of the storage account. For example, 'Standard'."
   default     = "Standard"
 }
-
-variable "org_name" {
-  default     = "ts"
-}
-
-variable "rg_prefix" {
-  default     = "rg"
-}
-
-variable "st_prefix" {
-  default     = "st"
-}
-
-variable "project_name" {
-  default     = "fb"
-}
-
-variable "project_number" {
-  default     = "01"
-}
